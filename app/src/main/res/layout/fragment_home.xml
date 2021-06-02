@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.HomeFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="33dp"
+            android:alpha="0.5"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="hi,"
+            android:textColor="@color/black"
+            android:textFontWeight="600"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/userName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="34dp"
+            android:layout_toEndOf="@+id/username"
+            android:layout_toRightOf="@+id/username"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="Janny Arthur"
+            android:textFontWeight="600"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/kol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="32dp"
+            android:layout_toEndOf="@+id/userName"
+            android:layout_toRightOf="@+id/userName"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="👋🏼"
+            android:textFontWeight="600" />
+
+        <TextView
+            android:id="@+id/howau"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/username"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="17dp"
+            android:layout_marginEnd="154dp"
+            android:layout_marginRight="154dp"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="How are you today?"
+            android:textColor="#004B6B"
+            android:textFontWeight="600"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/ll1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/howau"
+            android:layout_marginTop="31dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/positive"
+                android:layout_width="110dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="22dp"
+                android:background="@drawable/btn_design4"
+                android:text="positive 🙂"
+                android:textAllCaps="false"
+                android:fontFamily="@font/montserrat_regular"
+                android:textFontWeight="400"
+                android:textColor="@color/black"
+                android:textSize="12dp"
+                app:backgroundTint="@null" />
+
+            <Button
+                android:id="@+id/ortasha"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginLeft="17dp"
+                android:background="@drawable/btn_design4"
+                android:text="ortasha ☺️"
+                android:fontFamily="@font/montserrat_regular"
+                android:textFontWeight="400"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="12dp"
+                app:backgroundTint="@null" />
+
+            <Button
+                android:id="@+id/superMood"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginLeft="17dp"
+                android:background="@drawable/btn_design4"
+                android:text="super 😋"
+                android:fontFamily="@font/montserrat_regular"
+                android:textFontWeight="400"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="12dp"
+                app:backgroundTint="@null" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll1"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/jaman"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="22dp"
+                android:text="jaman 😕"
+                android:fontFamily="@font/montserrat_regular"
+                android:textFontWeight="400"
+                android:textSize="12dp"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:background="@drawable/btn_design4"
+                app:backgroundTint="@null"/>
+
+            <Button
+                android:id="@+id/depression"
+                android:layout_width="132dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="17dp"
+                android:text="depression ☹️"
+                android:fontFamily="@font/montserrat_regular"
+                android:textFontWeight="400"
+                android:textAllCaps="false"
+                android:textSize="12dp"
+                android:textColor="@color/black"
+                android:background="@drawable/btn_design4"
+                app:backgroundTint="@null"/>
+
+            <Button
+                android:id="@+id/stress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="17dp"
+                android:text="stressful 😫"
+                android:fontFamily="@font/montserrat_regular"
+                android:textFontWeight="400"
+                android:textSize="12dp"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:background="@drawable/btn_design4"
+                app:backgroundTint="@null"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/sucVoted"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll2"
+            android:layout_marginTop="9dp"
+            android:textColor="@color/black"
+            android:visibility="gone"
+            android:fontFamily="@font/montserrat_regular"
+            android:textFontWeight="700"
+            android:gravity="center_horizontal"
+            android:text="you’ve successfully voted ✅"
+            android:textAlignment="center" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sucVoted"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="47dp"
+            android:layout_marginLeft="47dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="46dp"
+            android:layout_marginRight="46dp"
+            android:background="@drawable/bg">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="start">
+                <TextView
+                    android:layout_width="147dp"
+                    android:layout_height="wrap_content"
+                    android:text="We invite all employees to get vaccinated"
+                    android:textSize="16dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/line"
+                    android:layout_marginTop="11dp"
+                    android:layout_gravity="center_horizontal"/>
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="по всем вопросам обращаться к врачу"
+                    android:textColor="@color/white"
+                    android:layout_marginLeft="20dp"/>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/news_img"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>

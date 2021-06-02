@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.StatisticsActivity">
+
+    <ImageView
+        android:id="@+id/profile_img"
+        android:layout_width="205dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="84dp"
+        android:src="@drawable/profile_img"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/statisticLayout"
+        android:layout_width="match_parent"
+        android:layout_height="550dp"
+        android:layout_marginTop="304dp"
+        android:background="@drawable/layout_design"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/monthly"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:gravity="center_horizontal"
+            android:text="Monthly number"
+            android:fontFamily="@font/montserrat_regular"
+            android:textFontWeight="700"
+            android:layout_marginLeft="40dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+        <com.github.mikephil.charting.charts.BarChart
+            android:id="@+id/barChart"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginTop="30dp"/>
+
+        <ImageView
+            android:id="@+id/btnExit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/exit"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center_horizontal"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

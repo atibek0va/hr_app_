@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.hrapp">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.HRApp">
+        <activity android:name=".activities.guest.ApplyActivity"></activity>
+        <activity android:name=".activities.RespondsActivity" />
+        <activity android:name=".activities.AllCoursesActivity" />
+        <activity android:name=".activities.NewComplaintActivity" />
+        <activity android:name=".activities.NewQuestionActivity" />
+        <activity android:name=".activities.guest.JobDescriptionActivity" />
+        <activity android:name=".activities.guest.GuestMainPageActivity" />
+        <activity android:name=".activities.guest.WelcomeGuestActivity" />
+        <activity android:name=".activities.financesupport.LaptopActivity" />
+        <activity android:name=".activities.financesupport.TransportActivity" />
+        <activity android:name=".activities.financesupport.RealstateActivity" />
+        <activity android:name=".activities.financesupport.HealthcareActivity" />
+        <activity android:name=".activities.StatisticsActivity" />
+        <activity android:name=".activities.ProfileActivity" />
+        <activity android:name=".activities.MessageActivity" />
+        <activity android:name=".activities.BronActivity" />
+        <activity android:name=".authenfication.Login" />
+        <activity android:name=".activities.EditUserInfo" />
+        <activity android:name=".activities.MainActivity" />
+        <activity android:name=".activities.MainPageActivity" />
+        <activity android:name=".authenfication.Registration" />
+        <activity android:name=".activities.Doctors" />
+        <activity android:name=".activities.Welcome">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

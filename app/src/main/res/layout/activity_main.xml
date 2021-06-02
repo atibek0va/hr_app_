@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.MainActivity">
+
+    <include
+        android:id="@+id/tb"
+        layout="@layout/toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tb">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="100dp">
+
+            <LinearLayout
+                android:layout_width="330dp"
+                android:layout_weight=".1"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="40dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginRight="40dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/person"
+                    android:layout_weight=".1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rectan"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="24dp"
+                        android:text="Personality Psychologist"
+                        android:textColor="#5F7CC6"
+                        android:textFontWeight="600"
+                        android:textSize="16dp"
+                        android:textStyle="normal" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/person" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/family"
+                    android:layout_weight=".1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:background="@drawable/rectan2"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="24dp"
+                        android:text="Family Psychologist"
+                        android:textColor="#5F7CC6"
+                        android:textFontWeight="600"
+                        android:textSize="16dp"
+                        android:textStyle="normal" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/family" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight=".1"
+                android:layout_width="330dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="150dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="40dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginRight="40dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/social"
+                    android:layout_weight=".1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rectan2"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="24dp"
+                        android:text="Social Psychologist"
+                        android:textColor="#5F7CC6"
+                        android:textFontWeight="600"
+                        android:textSize="16dp"
+                        android:textStyle="normal" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/person" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/education"
+                    android:layout_weight=".1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:background="@drawable/rectan"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="24dp"
+                        android:text="Education Psychologist"
+                        android:textColor="#5F7CC6"
+                        android:textFontWeight="600"
+                        android:textSize="16dp"
+                        android:textStyle="normal" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/family" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="330dp"
+                android:layout_weight=".1"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="40dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="300dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/person2"
+                    android:layout_weight=".1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rectan"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="24dp"
+                        android:text="Personality Psychologist"
+                        android:textColor="#5F7CC6"
+                        android:textFontWeight="600"
+                        android:textSize="16dp"
+                        android:textStyle="normal" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/person" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/family2"
+                    android:layout_weight=".1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:background="@drawable/rectan2"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="24dp"
+                        android:text="Family Psychologist"
+                        android:textColor="#5F7CC6"
+                        android:textFontWeight="600"
+                        android:textSize="16dp"
+                        android:textStyle="normal" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/family" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="330dp"
+                android:layout_weight=".1"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="450dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="40dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginRight="40dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/social2"
+                    android:layout_weight=".1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rectan2"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="24dp"
+                        android:text="Social Psychologist"
+                        android:textColor="#5F7CC6"
+                        android:textFontWeight="600"
+                        android:textSize="16dp"
+                        android:textStyle="normal" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/person" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/education2"
+                    android:layout_weight=".1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:background="@drawable/rectan"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="24dp"
+                        android:text="Education Psychologist"
+                        android:textColor="#5F7CC6"
+                        android:textFontWeight="600"
+                        android:textSize="16dp"
+                        android:textStyle="normal" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/family" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

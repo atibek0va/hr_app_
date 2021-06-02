@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.financesupport.RealstateActivity">
+
+    <include
+        android:id="@+id/finance_tb"
+        layout="@layout/toolbar_finance" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:gravity="center_horizontal"
+        android:text="Real estate"
+        android:textAlignment="center"
+        android:textColor="#5F7CC6"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/finance_tb"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:id="@+id/abthealthcare"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="The Company devotes much attention to the children and families of its employees: financial support is available for mothers, large families, and employees on paternity and maternity leave for up to three years. Children benefit from presents during festivities and holidays, they receive healthcare and are given the opportunity to partake in various cultural and sporting events."
+        android:textSize="14dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

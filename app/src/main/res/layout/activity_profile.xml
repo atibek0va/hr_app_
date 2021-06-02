@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.ProfileActivity">
+
+    <include
+        android:id="@+id/profile_tb"
+        layout="@layout/toolbar_profile" />
+
+    <ImageView
+        android:id="@+id/profile_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/profile_img"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_tb" />
+
+    <TextView
+        android:id="@+id/userName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Janny Arthur"
+        android:fontFamily="@font/montserrat_semibold"
+        android:textFontWeight="700"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_img" />
+
+    <TextView
+        android:id="@+id/userMamandyk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:alpha="0.5"
+        android:text="Product Manager"
+        android:textColor="@color/black"
+        android:fontFamily="@font/montserrat_regular"
+        android:textFontWeight="600"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userName" />
+
+    <LinearLayout
+        android:id="@+id/networks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userMamandyk">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/insta" />
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="25dp"
+            android:src="@drawable/tele" />
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="25dp"
+            android:src="@drawable/mail" />
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="25dp"
+            android:src="@drawable/phone" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/personInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="36dp"
+        android:text="Personal info"
+        android:fontFamily="@font/montserrat_regular"
+        android:textFontWeight="600"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/networks" />
+
+    <ImageView
+        android:id="@+id/editUserInfo"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="36dp"
+        android:src="@drawable/edit"
+        app:layout_constraintStart_toEndOf="@+id/personInfo"
+        app:layout_constraintTop_toBottomOf="@+id/networks" />
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="working hour"
+        android:textColor="#D8CBCB"
+        android:fontFamily="@font/montserrat_regular"
+        android:textFontWeight="600"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.105"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/personInfo" />
+
+    <TextView
+        android:id="@+id/workingHour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="8 hours per day"
+        android:textColor="#010B0F"
+        android:textSize="15sp"
+        android:fontFamily="@font/montserrat_regular"
+        android:textFontWeight="600"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.116"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv1" />
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="curatorship"
+        android:textColor="#D8CBCB"
+        android:textSize="12sp"
+        android:fontFamily="@font/montserrat_regular"
+        android:textFontWeight="600"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.105"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/workingHour" />
+
+    <TextView
+        android:id="@+id/curatorship"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="+"
+        android:textColor="#010B0F"
+        android:fontFamily="@font/montserrat_regular"
+        android:textFontWeight="600"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.091"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv2" />
+
+    <TextView
+        android:id="@+id/tv3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="additional works"
+        android:fontFamily="@font/montserrat_regular"
+        android:textFontWeight="600"
+        android:textColor="#D8CBCB"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.105"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/curatorship" />
+
+    <TextView
+        android:id="@+id/addWorks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:maxLines="100"
+        android:text="Director of dormitory"
+        android:textColor="#010B0F"
+        android:textSize="15sp"
+        android:fontFamily="@font/montserrat_regular"
+        android:textFontWeight="600"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.138"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv3" />
+
+    <LinearLayout
+        android:id="@+id/layoutMonthly"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="112dp"
+        android:background="@drawable/layout_design"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addWorks">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/montserrat_semibold"
+            android:gravity="center_horizontal"
+            android:text="Monthly number"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textFontWeight="600"
+            android:textSize="16dp" />
+    </LinearLayout>
+
+    <!--    <Button-->
+<!--        android:id="@+id/btnMonthly"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="60dp"-->
+<!--        android:layout_marginTop="48dp"-->
+<!--        android:background="@drawable/layout_design"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/addWorks"-->
+<!--        tools:layout_editor_absoluteX="0dp"-->
+<!--        app:backgroundTint="@null"-->
+<!--        android:text="Monthly number"-->
+<!--        android:textStyle="bold"-->
+<!--        android:textAllCaps="false"-->
+<!--        android:paddingBottom="23dp"/>-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
